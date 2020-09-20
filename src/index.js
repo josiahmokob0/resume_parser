@@ -1,5 +1,4 @@
-const parseIt = require('./utils/parseIt');
-var logger = require('tracer').colorConsole();
+const parseIt = require("./utils/parseIt");
 
 module.exports.parseResumeFile = function(inputFile, outputDir) {
   return new Promise((resolve, reject) => {
