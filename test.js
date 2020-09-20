@@ -1,21 +1,11 @@
-const ResumeParser = require('./src');
+const ResumeParser = require("./src");
 
-// const fileDir = process.cwd() + '/files/';
-// ResumeParser
-//   .parseResumeFile(fileDir + 'resume.doc', fileDir + 'compiled') //input file, output dir
-//   .then(file => {
-//     console.log("Yay! " + file);
-//   })
-//   .catch(error => {
-//     console.log('parseResume failed');
-//     console.error(error);
-//   });
-
-ResumeParser.parseResumeUrl('http://www.mysite.com/resume.txt') // url
-  .then(data => {
-    console.log('Yay! ', data);
+ResumeParser.parseResumeFile("/mnt/media2/projects/documents/resume.pdf", "./")
+  .then((file) => {
+    console.log(file);
   })
-  .catch(error => {
-    console.log('parseResume failed');
+  .catch((error) => {
+    console.log("parseResume failed");
     console.error(error);
   });
+
