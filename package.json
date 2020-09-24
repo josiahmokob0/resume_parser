@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^8.2.0",
     "request": "^2.83.0",
     "textract": "^2.2.0",
     "tracer": "^0.8.11",

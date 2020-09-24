@@ -1,6 +1,4 @@
-var request = require("request");
-var cheerio = require("cheerio");
-module.exports = {
+const dictionary = {
   titles: {
     objective: ["objective", "objectives"],
     summary: ["summary"],
@@ -40,3 +38,4 @@ module.exports = {
   profiles: ["github.com"],
 };
 
+module.exports = dictionary;

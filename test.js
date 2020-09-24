@@ -1,11 +1,10 @@
-const ResumeParser = require("./src");
+const parser = require("./src");
+require("dotenv").config();
 
-ResumeParser.parseResumeFile("/mnt/media2/projects/documents/resume.pdf", "./")
-  .then((file) => {
-    console.log(file);
-  })
+const file = process.env.FILE;
+
+parser(file)
+  .then((data) => console.log(data))
   .catch((error) => {
-    console.log("parseResume failed");
-    console.error(error);
+    console.log(error);
   });
-
