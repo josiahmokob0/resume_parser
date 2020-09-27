@@ -3,19 +3,9 @@
   "version": "1.1.1",
   "description": "A Simple NodeJs library to parse Resume / CV to JSON.",
   "main": "src/index.js",
-  "author": "Parminder Klair",
-  "contributors": [
-    "Petar Petrov (https://github.com/Mihaylov93)"
-  ],
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/perminder-klair/resume-parser.git"
-  },
-  "bugs": {
-    "url": "https://github.com/perminder-klair/resume-parser/issues"
-  },
-  "homepage": "https://github.com/perminder-klair/resume-parser",
+  "email": "josayamkb@gmail.com",
+  "url": "https://github.com/josiahmokob0/resume_parser",
   "keywords": [
     "resume",
     "cv",
@@ -23,6 +13,10 @@
     "resume parser",
     "cv parser"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josiahmokob0/resume_parser.git"
+  },
   "scripts": {
     "test": "node test.js",
     "lint": "prettier --single-quote --trailing-comma es5 --write test.js src/*.js src/**/*.js src/**/**/*.js"
@@ -39,5 +33,10 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "prettier": "1.10.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/josiahmokob0/resume_parser/issues"
+  },
+  "homepage": "https://github.com/josiahmokob0/resume_parser#readme",
+  "author": "josiah"
 }
