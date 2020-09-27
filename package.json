@@ -1,7 +1,7 @@
 {
-  "name": "resume-parser",
-  "version": "1.1.1",
-  "description": "A Simple NodeJs library to parse Resume / CV to JSON.",
+  "name": "cv-parser",
+  "version": "0.0.1",
+  "description": "Extracts resume information",
   "main": "src/index.js",
   "license": "ISC",
   "email": "josayamkb@gmail.com",
@@ -37,6 +37,6 @@
   "bugs": {
     "url": "https://github.com/josiahmokob0/resume_parser/issues"
   },
-  "homepage": "https://github.com/josiahmokob0/resume_parser#readme",
+  "homepage": "https://josiahmokob0.github.io/resume_parser/",
   "author": "josiah"
 }

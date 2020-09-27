@@ -1,7 +1,5 @@
 const parser = require("./src");
-require("dotenv").config();
-
-const file = process.env.FILE;
+const file = "your file dir";
 
 parser(file)
   .then((data) => console.log(data))
