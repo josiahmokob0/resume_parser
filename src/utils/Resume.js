@@ -1,4 +1,4 @@
-var _ = require('underscore');
+var _ = require("underscore");
 
 module.exports = function() {
   return new Resume();
@@ -10,7 +10,7 @@ function Resume() {
 }
 
 Resume.prototype.addKey = function(key, value) {
-  value = value || '';
+  value = value || "";
   value = value.trim();
   // reject falsy values
   if (value) {

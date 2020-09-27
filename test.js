@@ -1,21 +1,10 @@
-const ResumeParser = require('./src');
+const parser = require("./src");
+require("dotenv").config();
 
-// const fileDir = process.cwd() + '/files/';
-// ResumeParser
-//   .parseResumeFile(fileDir + 'resume.doc', fileDir + 'compiled') //input file, output dir
-//   .then(file => {
-//     console.log("Yay! " + file);
-//   })
-//   .catch(error => {
-//     console.log('parseResume failed');
-//     console.error(error);
-//   });
+const file = process.env.FILE;
 
-ResumeParser.parseResumeUrl('http://www.mysite.com/resume.txt') // url
-  .then(data => {
-    console.log('Yay! ', data);
-  })
-  .catch(error => {
-    console.log('parseResume failed');
-    console.error(error);
+parser(file)
+  .then((data) => console.log(data))
+  .catch((error) => {
+    console.log(error);
   });
