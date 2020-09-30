@@ -26,7 +26,7 @@ const parseFile = (preppedFile) => {
     parseDictionaryTitles(resume, rows, i);
     parseDictionaryInline(resume, row);
   });
-  return resume;
+  return resume.parts;
 };
 
 module.exports = async (inputFile) => {
