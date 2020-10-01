@@ -34,9 +34,45 @@ class Resume {
   jsoned = () => {
     return JSON.stringify(this.parts);
   };
+
+  getName = () => {
+    console.log(this.parts);
+    return this.parts.name;
+  };
+
+  getEmail = () => {
+    return this.parts.email;
+  };
+
+  getProfile = () => {
+    return this.parts.profiles;
+  };
+
+  getSkills = () => {
+    return this.parts.skills && this.parts.skills.split(" ");
+  };
+
+  getEducation = () => {
+    return this.parts.education;
+  };
+
+  getExperience = () => {
+    return this.parts.experience;
+  };
+
+  getSummary = () => {
+    return this.parts.objective;
+  };
+
+  getAwards = () => {
+    return this.parts.awards;
+  };
+
+  getVoluteering = () => {
+    return this.parts.volunteering;
+  };
 }
 
 module.exports = function() {
   return new Resume();
 };
-
